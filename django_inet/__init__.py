@@ -1,1 +1,4 @@
-__version__ = '0.1.0'
+import pkg_resources
+
+__version__ = pkg_resources.require('django_inet')[0].version
+
